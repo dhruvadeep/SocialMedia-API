@@ -1,6 +1,6 @@
 <h1>Social Media API using FASTAPI (Python)</h1>
 
-<img src="https://example.com/social-media-api.png" alt="Social Media API">
+<img src="https://raw.githubusercontent.com/dhruvadeep/SocialMedia-API/main/logo.png" alt="Social Media API">
 
 <h2>Contributors</h2>
 <ol>
