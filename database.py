@@ -8,7 +8,9 @@ from sqlalchemy.orm import sessionmaker
 
 # DATABASE URL
 # postgresql://user:password@host:port/database
-SQLALCHEMY_DATABASE_URL = "postgresql://postgres:A3AEB546@localhost/fastapi"
+SQLALCHEMY_DATABASE_URL = "postgresql://postgres:{**************}@localhost/fastapi"
+# PASSWORD HAS BEEN BLURRED FOR SAFETY PURPOSE
+
 
 # create engine for database
 engine = create_engine(SQLALCHEMY_DATABASE_URL)
