@@ -1,50 +1,58 @@
 from pydantic import BaseModel, EmailStr
 from datetime import datetime
+from typing import Optional
 
-# class Post(BaseModel):
-#     title: str
-#     content: str
-#     published: bool = True
-
-# class CreatePost(BaseModel):
-#     title: str
-#     content: str
-#     published: bool = True
-
-# class UpdatePost(BaseModel):
-#     title: str
-#     content: str
-#     published: bool = True
-
+# Base model for all the models (POSTS)
 class PostBase(BaseModel):
     title: str
     content: str
     published: bool = True
 
+# Its base model for creating Posts
 class PostCreate(PostBase):
     pass
 
-# class PostUpdate(PostBase):
-#     pass
-
-# This i because we dont need id and all
+# Its base model for updating Posts
+# It inherits PostBase
 class Post(PostBase):
     id: int
-    # title: str
-    # content: str
-    # published: bool
     created_at: datetime
     class Config():
         orm_mode = True
 
 
 
+
+# USERS
+
+# Base model for all the models (USERS)
 class UserCreate(BaseModel):
     email: EmailStr
     password: str
 
+# Its base model for creating Users
 class UserOut(BaseModel):
+    id: int
     email: EmailStr
     created_at: datetime
     class Config():
         orm_mode = True
+
+# Its base model for LOGIN
+class UserLogin(BaseModel):
+    email: EmailStr
+    password: str
+
+
+
+
+# OAUTH2 SCHEMAS
+
+# Base model for all the models (OAUTH2)
+class Token(BaseModel):
+    access_token: str
+    token_type: str
+
+# Its base model for creating Token AND VALIDING data
+class TokenData(BaseModel):
+    id: Optional[str] = None
