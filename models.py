@@ -6,7 +6,7 @@ from sqlalchemy.sql.sqltypes import TIMESTAMP
 # creating models
 # Creating modules for SQLAlchemy or any ORM framework simplifies the usage of the framework, improves code organization, promotes  
 # code reuse, allows customization, facilitates testing, and enables performance optimizations.
-
+# done by sachin
 
 # Creating models for POSTS table
 class Post(Base):
