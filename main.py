@@ -12,6 +12,7 @@ from random import randint
 import time
 
 # PGSQL imports
+
 # database cursors are required 
 from psycopg2.extras import RealDictCursor
 import psycopg2
