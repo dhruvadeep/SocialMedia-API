@@ -13,8 +13,8 @@ from ..database import get_db
 
 
 
-# Defining the route and tags for it.
-# PREFIX_URL = /posts
+# Defining the route and tags for it which uses irl.
+# PREFIX_URL = /posts 
 # TAGS = POSTS
 router = APIRouter(
     prefix="/posts",
