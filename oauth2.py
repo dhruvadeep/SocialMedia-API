@@ -28,7 +28,7 @@ ACCESS_TOKEN_EXPIRE_MINUTES = 30
 
 
 
-# create function to create access token
+# create function to create an access token
 # create_access_token function takes data as argument
 # data is a dictionary
 # to_encode is a copy of data
