@@ -4,9 +4,9 @@
 
 <h2>Contributors</h2>
 <ol>
-  <li>Dhruvadeep</li>
-  <li>Sanjay</li>
-  <li>Sachin</li>
+  <li>Dhruvadeep [@dhruvadeep]</li>
+  <li>Sanjay [@OPG04]</li>
+  <li>Sachin [@Sachin7712]</li>
 </ol>
 
 <h2>Hours Worked</h2>
