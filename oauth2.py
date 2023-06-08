@@ -9,9 +9,6 @@ from fastapi import Depends, status, HTTPException
 from fastapi.security import OAuth2PasswordBearer
 
 
-
-
-
 # create oauth2_scheme
 # login url is able to get token only
 oauth2_scheme = OAuth2PasswordBearer(tokenUrl="login")
@@ -47,8 +44,6 @@ def create_access_token(data: dict):
     # encode to_encode with SECRET_KEY and ALGORITHM
     encoded_jwt = jwt.encode(to_encode, SECRET_KEY, algorithm=ALGORITHM)
     return encoded_jwt
-
-
 
 
 # create function to verify access token
